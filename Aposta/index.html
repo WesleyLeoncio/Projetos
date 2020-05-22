@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/odd.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <title>:: Calcular Odd ::</title>
+</head>
+
+<body>
+    <label for="" class="lbTitulo">Calcular Odd</label>
+    <div class="principal">
+        <div class="aposta1">
+            <div class="lbValorApostatb1">
+                <label for="lbAposta1" class="lbValor">Valor da Aposta </label>
+            </div>
+
+            <div class="inputValorApostatab1">
+                <input type="text" id="aposta1" />
+            </div>
+
+            <div class="lbOddtab1">
+                <label for="lbOdd1" class="lbValor">Valor do Odd</label>
+            </div>
+
+            <div class="inputOddtab1">
+                <input type="text" id="odd1" />
+            </div>
+        </div>
+        <div class="botao1">
+            <button type="button" class="btn btn-success" id="calcOdd">+</button>
+            <div class="botao2">
+                <button type="button" class="btn btn-danger" id="limparOdd">-</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="dados">
+        <div class="table1">
+            <table border="1" id="tableOdd">
+                <thead>
+                    <tr>
+                        <th>Valor da Aposta</th>
+                        <th>Valor do Odd</th>
+                        <th>Valor Previsto</th>
+                        <th>Lucro</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------------------->
+
+    <label for="" class="lbTitulo2">Calcular Intervalo</label>
+    <div class="principalIntervalo">
+        <div class="aposta1">
+            <div class="lbInicial">
+                <label for="lbAposta1" class="lbValor">Valor Inicial</label>
+            </div>
+
+            <div class="ipvalorInicia">
+                <input type="text" id="inputValorInicial" />
+            </div>
+
+            <div class="lbFinal">
+                <label for="lbOdd1" class="lbValor">Valor Final</label>
+            </div>
+
+            <div class="ipValorFinal">
+                <input type="text" id="inputValorFinal" />
+            </div>
+
+            <div class="lbOdd">
+                <label for="lbOdd1" class="lbValor">Valor Odd</label>
+            </div>
+
+            <div class="ipOdd">
+                <input type="text" id="inputvalorOdd" />
+            </div>
+        </div>
+        <div class="botao3">
+            <button type="button" class="btn btn-success" id="calcOddIntervalo">Calcular</button>
+        </div>
+
+    </div>
+
+    <div class="dadosInteralo">
+        <div class="table1">
+            <table border="1" id="tableOddIntervalo">
+                <thead>
+                    <tr>
+                        <th>Valor da Aposta</th>
+                        <th>Valor do Odd</th>
+                        <th>Valor Previsto</th>
+                        <th>Lucro</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+</body>
+<footer></footer>
+<script src="script/scriptOdd.js"></script>
+
+</html>
