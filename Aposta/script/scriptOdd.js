@@ -2,8 +2,8 @@
 let tab;
 document.getElementById("calcOdd").onclick = function () {
   const aposta1 = new Aposta();
-  aposta1.setValorAposta(document.getElementById("aposta1").value);
-  aposta1.setOddAposta(document.getElementById("odd1").value);
+  aposta1.setValorAposta(parseFloat(document.getElementById("aposta1").value));
+  aposta1.setOddAposta(parseInt(document.getElementById("odd1").value));
   document.getElementById("aposta1").value = null;
   carregarTabela(aposta1);
 };
@@ -42,9 +42,9 @@ function limparOdds() {
 /////////////////////////////////////////////////////////////////////////////////
 // Calcular Intervalo
 document.getElementById("calcOddIntervalo").onclick = function () {
-  let inicial = document.getElementById("inputValorInicial").value;
-  let final = document.getElementById("inputValorFinal").value;
-  let odd = document.getElementById("inputvalorOdd").value;
+  let inicial = parseFloat(document.getElementById("inputValorInicial").value);
+  let final = parseFloat(document.getElementById("inputValorFinal").value);
+  let odd = parseInt(document.getElementById("inputvalorOdd").value);
   calcularIntervalo(inicial, final, odd);
 };
 
