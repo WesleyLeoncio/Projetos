@@ -12,6 +12,7 @@ document.getElementById("limparOdd").onclick = function () {
   limparOdds();
 }
 
+
 function carregarTabela(aposta1) {
   tabela1(aposta1);
 }
@@ -41,9 +42,9 @@ function limparOdds() {
 /////////////////////////////////////////////////////////////////////////////////
 // Calcular Intervalo
 document.getElementById("calcOddIntervalo").onclick = function () {
-  let inicial = parseFloat(document.getElementById("inputValorInicial").value);
-  let final = parseFloat(document.getElementById("inputValorFinal").value);
-  let odd = parseFloat(document.getElementById("inputvalorOdd").value);
+  let inicial = document.getElementById("inputValorInicial").value;
+  let final = document.getElementById("inputValorFinal").value;
+  let odd = document.getElementById("inputvalorOdd").value;
   calcularIntervalo(inicial, final, odd);
 };
 
