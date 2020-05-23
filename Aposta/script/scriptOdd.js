@@ -3,7 +3,7 @@ let tab;
 document.getElementById("calcOdd").onclick = function () {
   const aposta1 = new Aposta();
   aposta1.setValorAposta(parseFloat(document.getElementById("aposta1").value));
-  aposta1.setOddAposta(parseInt(document.getElementById("odd1").value));
+  aposta1.setOddAposta(parseFloat(document.getElementById("odd1").value));
   document.getElementById("aposta1").value = null;
   carregarTabela(aposta1);
 };
@@ -44,7 +44,7 @@ function limparOdds() {
 document.getElementById("calcOddIntervalo").onclick = function () {
   let inicial = parseFloat(document.getElementById("inputValorInicial").value);
   let final = parseFloat(document.getElementById("inputValorFinal").value);
-  let odd = parseInt(document.getElementById("inputvalorOdd").value);
+  let odd = parseFloat(document.getElementById("inputvalorOdd").value);
   calcularIntervalo(inicial, final, odd);
 };
 
