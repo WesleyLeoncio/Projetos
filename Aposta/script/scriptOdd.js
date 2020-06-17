@@ -4,7 +4,7 @@ document.getElementById("calcOdd").onclick = function () {
   const aposta1 = new Aposta();
   aposta1.setValorAposta(parseFloat(document.getElementById("aposta1").value));
   aposta1.setOddAposta(parseFloat(document.getElementById("odd1").value));
-  document.getElementById("aposta1").value = null;
+  //document.getElementById("aposta1").value = null;
   carregarTabela(aposta1);
 };
 
