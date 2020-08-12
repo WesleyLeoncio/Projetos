@@ -128,9 +128,9 @@ document.getElementById("btCalcular").onclick = () => {
 
 function calcularBanca(p, valor) {
   p /= 100;
-  lbBancaValor.innerHTML = "BANCA R$: " + valor;
+  lbBancaValor.innerHTML = "BANCA R$: " + valor.toFixed(2);
   let u = (valor * p);
   let bu = valor / u;
-  lbBancaUN.innerHTML = "BANCA UN: " + bu;
-  lbBancaBU.innerHTML = "VALOR DA UNIDADE: " + u;
+  lbBancaUN.innerHTML = "BANCA UN: " + bu.toFixed(2);
+  lbBancaBU.innerHTML = "VALOR DA UNIDADE: " + u.toFixed(2);
 }

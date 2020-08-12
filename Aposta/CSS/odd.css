@@ -94,26 +94,27 @@
 
 #lbBancaValor{
   margin-top: 4px;
-  margin-left: 152px;
+  margin-left: 140px;
   font-weight: bold;
   color:#fff ;
 }
 
 #lbBancaUN{
   margin-top: 4px;
-  margin-left: 152px;
+  margin-left: 140px;
   font-weight: bold;
   color:#fff ;
 }
 
 #lbBancaBU{
   margin-top: 4px;
-  margin-left: 152px;
+  margin-left: 140px;
   font-weight: bold;
   color:#fff ;
 }
 
 #btCalcular{
+  margin-top: -3px;
   margin-left: 5px;
 }
 
