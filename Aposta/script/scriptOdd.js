@@ -110,3 +110,27 @@ class Aposta {
     return this._lucro - this._valorAposta;
   }
 }
+
+/////////////////////////////////// BANCA /////////////////////////////////////////////  
+document.getElementById("btCalcular").onclick = () => {
+  let lbBancaValor = document.getElementById("lbBancaValor");
+  let lbBancaUN = document.getElementById("lbBancaUN");
+  let lbBancaBU = document.getElementById("lbBancaBU");
+  if (document.getElementById("inputPorcento").value != "" && document.getElementById("inputValor").value != "") {
+    let p = parseFloat(document.getElementById("inputPorcento").value);
+    let valor = parseFloat(document.getElementById("inputValor").value);
+    calcularBanca(p, valor);
+  } else {
+    alert("Preencha os campos corretamente!");
+  }
+
+};
+
+function calcularBanca(p, valor) {
+  p /= 100;
+  lbBancaValor.innerHTML = "BANCA R$: " + valor;
+  let u = (valor * p);
+  let bu = valor / u;
+  lbBancaUN.innerHTML = "BANCA UN: " + bu;
+  lbBancaBU.innerHTML = "VALOR DA UNIDADE: " + u;
+}
