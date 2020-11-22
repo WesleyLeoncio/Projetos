@@ -1,3 +1,47 @@
+body{
+  padding: 15px;
+}
+
+.banca {
+  padding: 20px;
+  border: solid 2px #222;
+  color: #fff;
+  background-color: rgb(9, 31, 51);
+  box-shadow: 2px 2px 1px 1px #222; 
+  width: 1200px;
+
+}
+
+.bancaValores{
+  position: absolute;
+  top: 40px;
+  left: 560px;
+}
+
+#btCalcular{
+ margin-left: 15px;
+ margin-bottom: 5px;
+ width: 80px;
+}
+
+#lbBancaValor{
+  font-weight: bold;
+  color:#fff ;
+}
+
+#lbBancaUN{
+  margin-left: 75px;
+  font-weight: bold;
+  color:#fff ;
+}
+
+#lbBancaBU{
+  margin-left: 75px;
+  font-weight: bold;
+  color:#fff ;
+}
+/* ------------------------------------------*/
+
 .lbValor {
   color:#fff ;
   font-weight: bold;
@@ -19,55 +63,43 @@
 }
 
 
-
 .principal {
   position: absolute;
-  margin-top: 10%;
-  margin-left: 3%;
+  top: 130px;
+  left: 17px;
   border-collapse: collapse;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(9, 31, 51);
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 20px;
   padding-bottom: 20px;
-}
-
-.banca {
-  position: absolute;
-  margin-top: 1%;
-  margin-left: 3%;
-  border-collapse: collapse;
-  background-color: rgb(0, 0, 0);
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  width: 533px; 
 }
 
 
 .principalIntervalo{
   position: absolute;
-  margin-top: 10%;
-  margin-left: 50%;
+  margin-top: 30px;
+  margin-left: 667px;
   border-collapse: collapse;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(9, 31, 51);
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 20px;
   padding-bottom: 20px;
+  width: 533px; 
 }
 
 .dados {
   position: absolute;
-  margin-top: 18%;
-  margin-left: 27px;
+  margin-top: 125px;
+  margin-left: -8px;
   border-collapse: collapse;
 }
 
 .dadosInteralo {
-  position: absolute;
-  margin-top: 18%;
-  margin-left: 49%;
+  margin-top:  125px;
+  margin-left: 658px;
   border-collapse: collapse;
 }
 
@@ -92,32 +124,6 @@
   margin-left: 140px;
 }
 
-#lbBancaValor{
-  margin-top: 4px;
-  margin-left: 140px;
-  font-weight: bold;
-  color:#fff ;
-}
-
-#lbBancaUN{
-  margin-top: 4px;
-  margin-left: 140px;
-  font-weight: bold;
-  color:#fff ;
-}
-
-#lbBancaBU{
-  margin-top: 4px;
-  margin-left: 140px;
-  font-weight: bold;
-  color:#fff ;
-}
-
-#btCalcular{
-  margin-top: -3px;
-  margin-left: 5px;
-}
-
 #inputPorcento{
   margin-top: 5px;
   margin-left: 5px;
@@ -139,11 +145,12 @@
 
 #inputvalorOdd{
   width: 110px;
+  margin-right: 300px;
 }
 
 .ipValorFinal{
   margin-top: 0px;
-  margin-left: 140px;
+  margin-left: 0px;
 
 }
 
@@ -173,7 +180,7 @@ caption {
 
 table {
   border-collapse: collapse;
-  background-color: black;
+  background-color: rgb(9, 31, 51);
   font-size: 17px;
   overflow: auto;
   width: 533px; 
@@ -186,7 +193,7 @@ td {
 }
 
 td {
-  color: red;
+  color: #fff;
   font-weight: bold;
 }
 th {
